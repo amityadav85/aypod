@@ -11,6 +11,7 @@
 		2805C9A028211544000D6163 /* AYPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2805C99F28211544000D6163 /* AYPod.swift */; };
 		2805C9A6282115D4000D6163 /* ay_test_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805C9A128211551000D6163 /* ay_test_sdk.xcframework */; };
 		2805C9A7282115D4000D6163 /* ay_test_sdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2805C9A128211551000D6163 /* ay_test_sdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2805C9AB28214405000D6163 /* ay_test_sdk.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 2805C9A128211551000D6163 /* ay_test_sdk.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -143,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2805C9AB28214405000D6163 /* ay_test_sdk.xcframework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
