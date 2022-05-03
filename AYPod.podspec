@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.12"
-  spec.summary      = "Test AYPod."
+  spec.version      = "1.0.14"
+  spec.summary      = "Test AY Dice Pod."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,12 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-    Test AYPod for public distribution of a framework.
+    Test AYPod for public distribution of the AY Dice framework.
                    DESC
 
   spec.homepage     = "https://github.com/amityadav85/aypod"
+  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -37,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  #spec.license      =  "MIT"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
+
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -51,6 +53,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "Amit Yadav" => "amit15885@gmail.com" }
+  # Or just: spec.author    = "Amit Yadav"
   # spec.authors            = { "Amit Yadav" => "amit15885@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Amit Yadav"
 
@@ -61,8 +64,14 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "9.0"
-  spec.swift_version = "5.0"
+  # spec.platform     = :ios, "5.0"
+
+  #  When using multiple platforms
+  # spec.ios.deployment_target = "5.0"
+  # spec.osx.deployment_target = "10.7"
+  # spec.watchos.deployment_target = "2.0"
+  # spec.tvos.deployment_target = "9.0"
+
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -70,10 +79,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  #spec.source       = { :http => "https://github.com/amityadav85/aypod.git", :tag => "#{spec.version}" }
-  #spec.source           = { :http => "https://github.com/amityadav85/aypod/raw/main/ay_test_sdk.xcframework.zip" }
   spec.source             = { :git => 'https://github.com/amityadav85/aypod.git', :tag => "#{spec.version}" }
-
+  spec.vendored_frameworks = "AYDice.xcframework"  
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -82,10 +89,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
- # spec.source_files  = "AYPod/*.{swift}"
-  spec.vendored_frameworks = "ay_test_sdk.xcframework"
-  
+  #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
+
   # spec.public_header_files = "Classes/**/*.h"
 
 

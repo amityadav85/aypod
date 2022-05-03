@@ -1,0 +1,11 @@
+framework module AYDice {
+  umbrella header "AYDice.h"
+
+  export *
+  module * { export * }
+}
+
+module AYDice.Swift {
+    header "AYDice-Swift.h"
+    requires objc
+}
