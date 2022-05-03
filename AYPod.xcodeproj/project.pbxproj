@@ -12,12 +12,13 @@
 		2805C9A6282115D4000D6163 /* ay_test_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805C9A128211551000D6163 /* ay_test_sdk.xcframework */; };
 		2805C9A7282115D4000D6163 /* ay_test_sdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2805C9A128211551000D6163 /* ay_test_sdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2805C9AB28214405000D6163 /* ay_test_sdk.xcframework in Resources */ = {isa = PBXBuildFile; fileRef = 2805C9A128211551000D6163 /* ay_test_sdk.xcframework */; };
+		2805C9AC28214AE2000D6163 /* ay_test_sdk.xcframework in Sources */ = {isa = PBXBuildFile; fileRef = 2805C9A128211551000D6163 /* ay_test_sdk.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2805C9A8282115D4000D6163 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -155,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2805C9AC28214AE2000D6163 /* ay_test_sdk.xcframework in Sources */,
 				2805C9A028211544000D6163 /* AYPod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +201,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -262,6 +265,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
