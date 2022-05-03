@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.10"
+  spec.version      = "1.0.11"
   spec.summary      = "Test AYPod."
 
   # This description is used to generate tags and improve search results.
@@ -71,8 +71,8 @@ Pod::Spec.new do |spec|
   #
 
   #spec.source       = { :http => "https://github.com/amityadav85/aypod.git", :tag => "#{spec.version}" }
-  spec.source           = { :http => "https://github.com/amityadav85/aypod/raw/main/ay_test_sdk.xcframework.zip" }
-
+  #spec.source           = { :http => "https://github.com/amityadav85/aypod/raw/main/ay_test_sdk.xcframework.zip" }
+  spec.source             = { :git => 'https://github.com/amityadav85/aypod.git', :tag => "#{spec.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
