@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "AYPod/*.{swift}"
-  spec.vendored_frameworks = "AYPod/ay_test_sdk.xcframework"
+  #spec.vendored_frameworks = "AYPod/ay_test_sdk.xcframework"
   #spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "Classes/**/*.h"
 
