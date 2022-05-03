@@ -1,0 +1,11 @@
+framework module ay_test_sdk {
+  umbrella header "ay_test_sdk.h"
+
+  export *
+  module * { export * }
+}
+
+module ay_test_sdk.Swift {
+    header "ay_test_sdk-Swift.h"
+    requires objc
+}
