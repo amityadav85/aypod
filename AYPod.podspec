@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.9"
+  spec.version      = "1.0.10"
   spec.summary      = "Test AYPod."
 
   # This description is used to generate tags and improve search results.
@@ -37,7 +37,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      =  "MIT"
+  #spec.license      =  "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
