@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.15"
+  spec.version      = "1.0.16"
   spec.summary      = "Test AY Dice Pod."
 
   # This description is used to generate tags and improve search results.
@@ -63,8 +63,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
-  spec.platform     = :ios, "9.0"
+  spec.platform     = :ios
+  spec.ios.deployment_target = "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -79,8 +79,10 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source             = { :git => 'https://github.com/amityadav85/aypod.git', :tag => "#{spec.version}" }
-  spec.vendored_frameworks = "AYDice.xcframework"  
+  #spec.source             = { :git => 'https://github.com/amityadav85/aypod.git', :tag => "#{spec.version}" }
+  spec.source                  = { :http => 'https://github.com/amityadav85/aypod/raw/main/AYDice.xcframework.zip' }
+
+  spec.ios.vendored_frameworks = "AYDice.xcframework"  
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
