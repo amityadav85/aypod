@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "Test AYPod."
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
     Test AYPod for public distribution of a framework.
                    DESC
 
-  spec.homepage     = "https://github.com/amityadav85/aypod.git"
+  spec.homepage     = "https://github.com/amityadav85/aypod"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      =  "MIT"
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -69,7 +69,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/amityadav85/aypod.git", :tag => "#{spec.version}" }
+  #spec.source       = { :http => "https://github.com/amityadav85/aypod.git", :tag => "#{spec.version}" }
+  spec.source           = { :http => "https://github.com/amityadav85/aypod/tree/main/ay_test_sdk.xcframework.zip" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -83,7 +84,6 @@ Pod::Spec.new do |spec|
  # spec.source_files  = "AYPod/*.{swift}"
   spec.vendored_frameworks = "ay_test_sdk.xcframework"
   
-
   #spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "Classes/**/*.h"
 
