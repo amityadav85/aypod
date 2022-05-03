@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2805C99928211520000D6163 /* AYPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 2805C99828211520000D6163 /* AYPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2805C9A028211544000D6163 /* AYPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2805C99F28211544000D6163 /* AYPod.swift */; };
+		2805C9B32821792F000D6163 /* ay_test_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805C9B128217887000D6163 /* ay_test_sdk.xcframework */; };
+		2805C9B42821792F000D6163 /* ay_test_sdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2805C9B128217887000D6163 /* ay_test_sdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +20,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2805C9B42821792F000D6163 /* ay_test_sdk.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +31,7 @@
 		2805C99528211520000D6163 /* AYPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AYPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2805C99828211520000D6163 /* AYPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AYPod.h; sourceTree = "<group>"; };
 		2805C99F28211544000D6163 /* AYPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYPod.swift; sourceTree = "<group>"; };
+		2805C9B128217887000D6163 /* ay_test_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ay_test_sdk.xcframework; path = "../../../ay-test-sdk/ay_test_sdk.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2805C9B32821792F000D6163 /* ay_test_sdk.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,7 @@
 		2805C99728211520000D6163 /* AYPod */ = {
 			isa = PBXGroup;
 			children = (
+				2805C9B128217887000D6163 /* ay_test_sdk.xcframework */,
 				2805C99828211520000D6163 /* AYPod.h */,
 				2805C99F28211544000D6163 /* AYPod.swift */,
 			);
@@ -281,7 +287,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 73UU5N4925;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -311,7 +317,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 73UU5N4925;
 				DYLIB_COMPATIBILITY_VERSION = 1;

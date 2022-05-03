@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "Test AYPod."
 
   # This description is used to generate tags and improve search results.
@@ -83,7 +83,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "AYPod/*.{swift}"
-  #spec.vendored_frameworks = "AYPod/ay_test_sdk.xcframework"
+  spec.vendored_frameworks = "AYPod/ay_test_sdk.xcframework"
+  
   #spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "Classes/**/*.h"
 
