@@ -9,8 +9,8 @@ import ay_test_sdk
 
 public class AYPod {
     
-    public static func test () {
+    public static func test () -> Int {
         print("test ok")
-        AYTest.rollDice()
+        return AYTest.rollDice()
     }
 }
