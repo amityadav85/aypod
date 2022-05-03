@@ -70,7 +70,7 @@ Pod::Spec.new do |spec|
   #
 
   #spec.source       = { :http => "https://github.com/amityadav85/aypod.git", :tag => "#{spec.version}" }
-  spec.source           = { :http => "https://github.com/amityadav85/aypod/tree/main/ay_test_sdk.xcframework" }
+  spec.source           = { :http => "https://github.com/amityadav85/aypod/tree/main/ay_test_sdk.xcframework.zip" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
