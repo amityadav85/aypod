@@ -4,7 +4,7 @@
 @_exported import AYDice
 import Swift
 import _Concurrency
-@_hasMissingDesignatedInitializers public class AYDice {
+@_hasMissingDesignatedInitializers public class AYDiceClass {
   public static func roll() -> Swift.Int
   @objc deinit
 }
