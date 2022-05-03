@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "Test AYPod."
 
   # This description is used to generate tags and improve search results.
@@ -80,8 +80,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "AYPod/*.{swift}"
-  spec.vendored_frameworks = "AYPod/ay_test_sdk.xcframework"
+ # spec.source_files  = "AYPod/*.{swift}"
+  spec.vendored_frameworks = "ay_test_sdk.xcframework"
   
 
   #spec.exclude_files = "Classes/Exclude"
