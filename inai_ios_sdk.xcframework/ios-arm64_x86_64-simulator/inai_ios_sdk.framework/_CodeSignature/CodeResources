@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/inai_ios_sdk-Swift.h</key>
 		<data>
-		q2w0YXlueLYCtx37xPVA6LYQ19A=
+		dT0T7ORDTpwi+2d+wRanRUWV+ug=
 		</data>
 		<key>Headers/inai_ios_sdk.h</key>
 		<data>
@@ -15,6 +15,18 @@
 		<key>Info.plist</key>
 		<data>
 		HVe1Qz0eE1pHeZidJH9uyPa+7O4=
+		</data>
+		<key>Modules/inai_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		9WjyaOlB1iy6ijeRA+tlhbaGD7E=
+		</data>
+		<key>Modules/inai_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		1O4jI76SwZTPRRNhxwTGs0WLufI=
+		</data>
+		<key>Modules/inai_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		+5nP5Fc0gryB6yttfTsmsSW93eA=
 		</data>
 		<key>Modules/inai_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -43,11 +55,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q2w0YXlueLYCtx37xPVA6LYQ19A=
+			dT0T7ORDTpwi+2d+wRanRUWV+ug=
 			</data>
 			<key>hash2</key>
 			<data>
-			mzA8HL2RnApATKq5BJpKVHsLO+5nAs4NcqszcGxQqvs=
+			TemnDjscoMTUtuKYRPrkXltWDbP7WCc/ELgmjcXzC9c=
 			</data>
 		</dict>
 		<key>Headers/inai_ios_sdk.h</key>
@@ -59,6 +71,39 @@
 			<key>hash2</key>
 			<data>
 			ydwvzal8HPL83j7BOx057NaZJNpMoIdXuSkO1dNpxOk=
+			</data>
+		</dict>
+		<key>Modules/inai_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9WjyaOlB1iy6ijeRA+tlhbaGD7E=
+			</data>
+			<key>hash2</key>
+			<data>
+			aKbSnbedXTYPnVvXHj8fTnMjoeugFC2mR5679Mk7xcc=
+			</data>
+		</dict>
+		<key>Modules/inai_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1O4jI76SwZTPRRNhxwTGs0WLufI=
+			</data>
+			<key>hash2</key>
+			<data>
+			rsGZaGspzjP1IoeJ/bZsDgx18iEKkrA42qo1TEtIvKo=
+			</data>
+		</dict>
+		<key>Modules/inai_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+5nP5Fc0gryB6yttfTsmsSW93eA=
+			</data>
+			<key>hash2</key>
+			<data>
+			v3K3rQo44tH/Nitjt0Myc1iZNrOMZC7W5Nlu3PAQrSs=
 			</data>
 		</dict>
 		<key>Modules/inai_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
