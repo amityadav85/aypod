@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/inai_ios_sdk-Swift.h</key>
 		<data>
-		dT0T7ORDTpwi+2d+wRanRUWV+ug=
+		tXPkhU74dMGdhAvV9dRUQKLfu60=
 		</data>
 		<key>Headers/inai_ios_sdk.h</key>
 		<data>
@@ -27,6 +27,18 @@
 		<key>Modules/inai_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
 		+5nP5Fc0gryB6yttfTsmsSW93eA=
+		</data>
+		<key>Modules/inai_ios_sdk.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<data>
+		z/KV7WkZNjNArN+o6HwjWO1udTs=
+		</data>
+		<key>Modules/inai_ios_sdk.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
+		<data>
+		qSdfZfLsOgkXXXkMYVmcRw/OWAk=
+		</data>
+		<key>Modules/inai_ios_sdk.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<data>
+		NR4edHnyLF1f3wEebK3viW6hkz0=
 		</data>
 		<key>Modules/inai_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -55,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dT0T7ORDTpwi+2d+wRanRUWV+ug=
+			tXPkhU74dMGdhAvV9dRUQKLfu60=
 			</data>
 			<key>hash2</key>
 			<data>
-			TemnDjscoMTUtuKYRPrkXltWDbP7WCc/ELgmjcXzC9c=
+			1o8+z4ouAHE4onlDwmSTzt3LS5SjrobCx0hSlCPTp+4=
 			</data>
 		</dict>
 		<key>Headers/inai_ios_sdk.h</key>
@@ -104,6 +116,39 @@
 			<key>hash2</key>
 			<data>
 			v3K3rQo44tH/Nitjt0Myc1iZNrOMZC7W5Nlu3PAQrSs=
+			</data>
+		</dict>
+		<key>Modules/inai_ios_sdk.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z/KV7WkZNjNArN+o6HwjWO1udTs=
+			</data>
+			<key>hash2</key>
+			<data>
+			b342O816ou78EGAN/VlMtdq7UsVzvFNDXylv6Psm0I8=
+			</data>
+		</dict>
+		<key>Modules/inai_ios_sdk.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qSdfZfLsOgkXXXkMYVmcRw/OWAk=
+			</data>
+			<key>hash2</key>
+			<data>
+			EY3HSKMnf5HrV+q0yZgObdfPfhd70GY1bPydmg1f4Jg=
+			</data>
+		</dict>
+		<key>Modules/inai_ios_sdk.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NR4edHnyLF1f3wEebK3viW6hkz0=
+			</data>
+			<key>hash2</key>
+			<data>
+			ImxLQZ4tQOM4b6KxYtGUtHDPoCwOj8v/Dtbj0jwUyS4=
 			</data>
 		</dict>
 		<key>Modules/inai_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
