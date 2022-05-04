@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.25"
+  spec.version      = "1.0.26"
   spec.summary      = "Test AY Dice Pod."
 
   # This description is used to generate tags and improve search results.
