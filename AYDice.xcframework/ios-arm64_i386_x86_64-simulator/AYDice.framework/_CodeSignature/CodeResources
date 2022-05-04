@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AYDice-Swift.h</key>
 		<data>
-		Q7jqAhysQ4sI7lop0LG+tjFS2Io=
+		IvnP4N7DWQlQ2FcAx5Tv2TwqJ1M=
 		</data>
 		<key>Headers/AYDice.h</key>
 		<data>
@@ -15,6 +15,30 @@
 		<key>Info.plist</key>
 		<data>
 		+lZ8qyryzPWkOIwecX1VTC+3a9A=
+		</data>
+		<key>Modules/AYDice.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		AIHPr39JqYNtYhH0QACwruyJ1fY=
+		</data>
+		<key>Modules/AYDice.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		A1oQr57DuCGsjUQMuR/n0fjPldc=
+		</data>
+		<key>Modules/AYDice.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		2AoEeVpy1fbNUD5V7pSI4n078Io=
+		</data>
+		<key>Modules/AYDice.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<data>
+		4/z+bu13ZKDsSP+2eUamTeTjk9I=
+		</data>
+		<key>Modules/AYDice.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
+		<data>
+		fg8UjzvsOvME/1LljMCRnaU0rqE=
+		</data>
+		<key>Modules/AYDice.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<data>
+		paHayCWdsVdvD/OWkM2ZsCdMvNs=
 		</data>
 		<key>Modules/AYDice.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -39,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q7jqAhysQ4sI7lop0LG+tjFS2Io=
+			IvnP4N7DWQlQ2FcAx5Tv2TwqJ1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			N5+wPVNa2xbC3Td+Io30j/cqBb8BGbJZrTgk38chnqo=
+			1FAjN6iq5dj0XAXYWtd68EsOuSBDOJEZeRG7sCT2F4w=
 			</data>
 		</dict>
 		<key>Headers/AYDice.h</key>
@@ -55,6 +79,72 @@
 			<key>hash2</key>
 			<data>
 			lBxWsmOz0zPXgz8mmwCSQA4t/DuwI66RDrPiP/0zpbs=
+			</data>
+		</dict>
+		<key>Modules/AYDice.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AIHPr39JqYNtYhH0QACwruyJ1fY=
+			</data>
+			<key>hash2</key>
+			<data>
+			QHFnISzMQYxu6XYV/mCW2J+yPymwLrhPEuzjuHTY32c=
+			</data>
+		</dict>
+		<key>Modules/AYDice.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A1oQr57DuCGsjUQMuR/n0fjPldc=
+			</data>
+			<key>hash2</key>
+			<data>
+			I770mBfCrVCY2CYNM5RlXV7J9h2qg8wrGbbOh3IHd0g=
+			</data>
+		</dict>
+		<key>Modules/AYDice.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2AoEeVpy1fbNUD5V7pSI4n078Io=
+			</data>
+			<key>hash2</key>
+			<data>
+			b54I+hda/BAbV1BhfYM5zEZoDQ5Q9Pc9xxfPqcMVRMw=
+			</data>
+		</dict>
+		<key>Modules/AYDice.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4/z+bu13ZKDsSP+2eUamTeTjk9I=
+			</data>
+			<key>hash2</key>
+			<data>
+			heoNpONHVJ+Xyg5vN4qzTCzd/PDbk0ngwFhB9cmfvjQ=
+			</data>
+		</dict>
+		<key>Modules/AYDice.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fg8UjzvsOvME/1LljMCRnaU0rqE=
+			</data>
+			<key>hash2</key>
+			<data>
+			ewqCzVkh56eIgb4gW2LxkIdZb6a3TGBxyUeGUblGuVo=
+			</data>
+		</dict>
+		<key>Modules/AYDice.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			paHayCWdsVdvD/OWkM2ZsCdMvNs=
+			</data>
+			<key>hash2</key>
+			<data>
+			aGvFvC7rIGnnhoqgvQQ/CRNzSliGNx8+7mAHpwdb2rs=
 			</data>
 		</dict>
 		<key>Modules/AYDice.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
