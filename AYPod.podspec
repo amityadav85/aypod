@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.22"
+  spec.version      = "1.0.23"
   spec.summary      = "Test AY Dice Pod."
 
   # This description is used to generate tags and improve search results.
@@ -64,7 +64,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.platform     = :ios
-  spec.ios.deployment_target = "10.0"
+  spec.ios.deployment_target = "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
