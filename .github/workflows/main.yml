@@ -29,7 +29,7 @@ jobs:
   
       - name: Clone the sdk repo
         run: |
-          git clone https://amityadav85:${{ secrets.GH_TOKEN }}github.com/amityadav85/aydice-lib.git libclone
+          git clone https://amityadav85:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git libclone
           
       - name: Run build Script
         run: |
