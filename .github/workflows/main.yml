@@ -23,4 +23,4 @@ jobs:
       - name: list files
         uses: enricomarino/actions@v2
         with:
-          source: /
+          source: ./libclone
