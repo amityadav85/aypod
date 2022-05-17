@@ -44,3 +44,16 @@ jobs:
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           branch: main
+  
+      # Install Cocoapods on the machine
+      - name: Install Cocoapods
+        run: gem install cocoapods
+        
+      - name: Deploy to Cocoapods
+        run: |
+          set -eo pipefail
+          export POD_VERSION=$(git describe --tags `git rev-list --tags --max-count=1`)
+          pod lib lint --allow-warnings
+          pod trunk push --allow-warnings
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
