@@ -27,8 +27,8 @@ jobs:
       - name: copy framework file
         working-directory: ./
         run: |
-          rm ./AYDice.xcframework
-          cp ./libclone/AYDice.xcframework ./AYDice.xcframework
+          rm -rf ./AYDice.xcframework
+          mv ./libclone/AYDice.xcframework ./AYDice.xcframework
           git config --global user.email "amit15885@gmail.com"
           git config --global user.name "amityadav85"
 
