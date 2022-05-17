@@ -32,7 +32,8 @@ jobs:
           git clone https://amityadav85:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git libclone
           
       - name: Run build Script
+        working-directory: ./libclone
         run: |
-           chmod +x ./libclone/xcode_build.sh
-           ./libclone/xcode_build.sh
+           chmod +x ./xcode_build.sh
+           xcode_build.sh
         shell: bash
