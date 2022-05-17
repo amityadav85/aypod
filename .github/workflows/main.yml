@@ -17,6 +17,7 @@ jobs:
       - name: Run build Script
         working-directory: ./libclone
         run: |
+           ls
            chmod +x ./xcode_build.sh
            sh xcode_build.sh
         shell: bash
