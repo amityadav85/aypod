@@ -30,8 +30,9 @@ jobs:
       - name: Clone the sdk repo
         run: |
           git clone https://github.com/amityadav85/aydice-lib.git libclone
-          ./libclone/xcode_build.sh
-
-      - name: Build XC Framework
+          
+      - name: Run build Script
         run: |
-            xc build commands to build framework file
+           chmod +x ./libclone/xcode_build.sh
+           ./libclone/xcode_build.sh
+        shell: bash
