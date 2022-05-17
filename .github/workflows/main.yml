@@ -10,6 +10,9 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
       - name: Clone the sdk repo
         run: |
           git clone https://amityadav85:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git libclone
@@ -20,7 +23,21 @@ jobs:
            chmod +x xcode_build.sh
            sh xcode_build.sh
         shell: bash
-      - name: list files
-        uses: enricomarino/actions@v2
+        
+      - name: copy framework file
+        working-directory: ./
+        run: |
+          rm ./AYDice.xcframework
+          cp ./libclone/AYDice.xcframework ./AYDice.xcframework
+          git config --global user.email "amit15885@gmail.com"
+          git config --global user.name "amityadav85"
+
+          git add AYDice.xcframework
+          git commit -m "updating framwoerk file from git action"
+        shell: bash
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          source: ./libclone
+          github_token: ${{ secrets.GH_TOKEN }}
+          branch: main
