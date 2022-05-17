@@ -16,7 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPod"
-  spec.version      = "1.0.30"
+  #spec.version      = "1.0.31"
+  spec.version      = ENV['POD_VERSION'] || '1.0.0'
   spec.summary      = "Test AY Dice Pod."
 
   # This description is used to generate tags and improve search results.
@@ -80,8 +81,6 @@ Pod::Spec.new do |spec|
   #
 
   spec.source             = { :git => 'https://github.com/amityadav85/aypod.git', :tag => "#{spec.version}" }
-  #spec.source                  = { :http => 'https://github.com/amityadav85/aypod/raw/main/AYDice.xcframework.zip' }
-  
-  spec.ios.vendored_frameworks = "inai_ios_sdk.xcframework"  
+  spec.ios.vendored_frameworks = "AYDice.xcframework"  
 
 end
