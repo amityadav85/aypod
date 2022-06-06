@@ -37,7 +37,7 @@ jobs:
 
           git tag -f $(git describe --tags `git rev-list --tags --max-count=1`)
           git add AYDice.xcframework
-          git commit -m "Updating framework file to latest"
+          git commit -m "Updating framework file to latest via git action"
         shell: bash
       
       - name: Push changes
