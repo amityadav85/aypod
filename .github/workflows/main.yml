@@ -38,5 +38,5 @@ jobs:
           git add AYDice.xcframework
           git commit -m "Updating framework file to latest"
           git tag $(git describe --tags `git rev-list --tags --max-count=1`) -f
-          git push "https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git" --tags -f
+          git push https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git --tags -f
         shell: bash
