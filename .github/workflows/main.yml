@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          persist-credentials: true 
+          persist-credentials: false 
           fetch-depth: 0 
         
       - name: Clone the sdk repo
@@ -44,3 +44,5 @@ jobs:
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           branch: main
+          tags: true
+          force: true
