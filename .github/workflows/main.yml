@@ -36,7 +36,7 @@ jobs:
           git config --global user.name "amityadav85"
 
           git add AYDice.xcframework
-          git commit -m "updating framwoerk file from git action"
+          git commit -m "Updating framework file to latest"
         shell: bash
       
       - name: Push changes
