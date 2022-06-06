@@ -39,7 +39,7 @@ jobs:
           git commit -m "Updating framework file to latest"
           git tag $(git describe --tags `git rev-list --tags --max-count=1`) -f
           
-          git remote set-url origin https://${{secrets.GH_USERNAME}}:${{ secrets.GH_TOKEN }}@github.com/$amityadav85/aydice-lib.git
+          git remote set-url origin https://${{secrets.GH_USERNAME}}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git
 
           git push --tags -f
         shell: bash
