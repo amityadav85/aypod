@@ -18,7 +18,7 @@ jobs:
         
       - name: Clone the sdk repo
         run: |
-          git clone https://${{ secrets.GH_USERNAME }}@github.com/amityadav85/aydice-lib.git libclone
+          git clone https://${{ secrets.GH_USERNAME }}: ${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git libclone
 
       - name: Run build Script
         working-directory: ./libclone
@@ -37,7 +37,6 @@ jobs:
 
           git add AYDice.xcframework
           git commit -m "Updating framework file to latest"
-          git tag -a "$(git describe --tags `git rev-list --tags --max-count=1`)" -m "moved tag to latest"
-          git push origin "$(git describe --tags `git rev-list --tags --max-count=1`)"
-          git push origin
+          git tag -a "$(git describe --tags `git rev-list --tags --max-count=1`)" -m "moved tag to latest"          
+          git push "https://${{ secrets.GH_USERNAME }}: ${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git" --tags -f
         shell: bash
