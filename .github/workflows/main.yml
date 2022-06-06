@@ -18,7 +18,7 @@ jobs:
         
       - name: Clone the sdk repo
         run: |
-          git clone https://${{ secrets.GH_USERNAME }}: ${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git libclone
+          git clone https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git libclone
 
       - name: Run build Script
         working-directory: ./libclone
