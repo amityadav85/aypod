@@ -35,8 +35,8 @@ jobs:
           git config --global user.email "amit15885@gmail.com"
           git config --global user.name "amityadav85"
 
-          git tag -f $(git describe --tags `git rev-list --tags --max-count=1`)
           git add AYDice.xcframework
+          git tag -f $(git describe --tags `git rev-list --tags --max-count=1`)
           git commit -m "Updating framework file to latest via git action"
         shell: bash
       
