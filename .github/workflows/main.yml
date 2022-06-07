@@ -15,13 +15,6 @@ jobs:
         with:
           persist-credentials: false 
           fetch-depth: 0 
-        
-      - name: Set env
-        run: |
-          echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-      - name: Test
-        run: |
-          echo "Rel : ${{ env.RELEASE_VERSION }}  "
       - name: Update framework file to repo
         run: |
           git config --global user.email "amit15885@gmail.com"
@@ -30,13 +23,8 @@ jobs:
           VER=${GITHUB_REF#refs/*/}
           SVER="${VER//v}"
           git tag ${SVER}
+          git remote set-url --push origin https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aypod.git
+          git push --tags
+          git push
         shell: bash
-        
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          branch: main
-          tags: true
-          force: true
       
