@@ -19,41 +19,9 @@ jobs:
       - name: Set env
         run: |
           echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-          echo "RELEASE_VERSION_STRIPPED=${GITHUB_REF#refs/*/} sed 's/v//' " >> $GITHUB_ENV
       - name: Test
         run: |
           echo $RELEASE_VERSION
           echo ${{ env.RELEASE_VERSION }}  
-          cho ${{ env.RELEASE_VERSION_STRIPPED }} 
-        
-      - name: Clone the sdk repo
-        run: |
-          git clone https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git libclone
-
-      - name: Run build Script
-        working-directory: ./libclone
-        run: |
-           chmod +x xcode_build.sh
-           sh xcode_build.sh
-        shell: bash
-        
-      - name: Update framework file to repo
-        working-directory: ./
-        run: |
-          rm -rf ./AYDice.xcframework
-          mv ./libclone/AYDice.xcframework ./AYDice.xcframework
-          git config --global user.email "amit15885@gmail.com"
-          git config --global user.name "${{ secrets.GH_USERNAME }}"
-          git add AYDice.xcframework
-          git commit -m "Updating framework file to latest"
-          git tag -d ${{ env.RELEASE_VERSION }}  
-          git tag $(git describe --tags `git rev-list --tags --max-count=1`) -f
-        shell: bash
-        
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          branch: main
-          tags: true
-          force: true
+      
+      
