@@ -16,6 +16,11 @@ jobs:
           persist-credentials: false 
           fetch-depth: 0 
       
+      - name: Clone the sdk repo
+        run: |
+          git clone https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aydice-lib.git libclone
+        shell: bash
+        
       - name: Run build Script
         working-directory: ./libclone
         run: |
