@@ -27,7 +27,7 @@ jobs:
           git config --global user.email "amit15885@gmail.com"
           git config --global user.name "${{ secrets.GH_USERNAME }}"
           git tag -d ${{ env.RELEASE_VERSION }} 
-          VER=RELEASE_VERSION=${GITHUB_REF#refs/*/}
+          VER=${GITHUB_REF#refs/*/}
           SVER="${VER//v}"
           git tag ${SVER}
         shell: bash
