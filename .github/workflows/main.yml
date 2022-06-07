@@ -34,14 +34,14 @@ jobs:
           mv ./libclone/AYDice.xcframework ./AYDice.xcframework
           git config --global user.email "amit15885@gmail.com"
           git config --global user.name "${{ secrets.GH_USERNAME }}"
+          git remote set-url --push origin https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aypod.git
           VER=${GITHUB_REF#refs/*/}
           SVER="${VER//v}"
+          git push --delete origin ${VER}
           git add AYDice.xcframework
           git commit -m "Updating framework file to latest"
           git tag ${SVER}
-          git remote set-url --push origin https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aypod.git
-          git push --delete origin ${VER}
-          git push --tags
+          git push origin ${SVER}
           git push origin HEAD:main
         shell: bash
       
