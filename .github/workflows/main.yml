@@ -22,9 +22,8 @@ jobs:
           echo "RELEASE_VERSION_STRIPPED=${GITHUB_REF#refs/*/} | sed 's/v//'" >> $GITHUB_ENV
       - name: Test
         run: |
-          echo $RELEASE_VERSION
-          echo ${{ env.RELEASE_VERSION }}  
-          echo ${{ env.RELEASE_VERSION_STRIPPED }}  
+          echo "Rel : ${{ env.RELEASE_VERSION }}  "
+          echo "Stripped : ${{ env.RELEASE_VERSION_STRIPPED }}  "
       
       - name: Update framework file to repo
         run: |
