@@ -27,8 +27,7 @@ jobs:
           git config --global user.email "amit15885@gmail.com"
           git config --global user.name "${{ secrets.GH_USERNAME }}"
           git tag -d ${{ env.RELEASE_VERSION }}  
-          RELEASE_VERSION_STRIPPED= ${{ env.RELEASE_VERSION }} | sed 's/v//'
-          git tag $RELEASE_VERSION_STRIPPED
+          git tag "${{ env.RELEASE_VERSION//v}}"
         shell: bash
         
       - name: Push changes
