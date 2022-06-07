@@ -2,7 +2,7 @@ name: release_cocoapod
 
 on: 
   release: 
-    type: [published]
+    type: [released]
       
   workflow_dispatch:
 jobs:
