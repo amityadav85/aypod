@@ -15,12 +15,24 @@ jobs:
         with:
           persist-credentials: false 
           fetch-depth: 0 
+      
+      - name: Run build Script
+        working-directory: ./libclone
+        run: |
+           chmod +x xcode_build.sh
+           sh xcode_build.sh
+        shell: bash
+        
       - name: Update framework file to repo
         run: |
+          rm -rf ./AYDice.xcframework
+          mv ./libclone/AYDice.xcframework ./AYDice.xcframework
           git config --global user.email "amit15885@gmail.com"
           git config --global user.name "${{ secrets.GH_USERNAME }}"
           VER=${GITHUB_REF#refs/*/}
           SVER="${VER//v}"
+          git add AYDice.xcframework
+          git commit -m "Updating framework file to latest"
           git tag ${SVER}
           git remote set-url --push origin https://${{ secrets.GH_USERNAME }}:${{ secrets.GH_TOKEN }}@github.com/amityadav85/aypod.git
           git push --delete origin ${VER}
